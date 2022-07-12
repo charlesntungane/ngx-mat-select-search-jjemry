@@ -11,8 +11,8 @@ export interface BankGroup {
 /** list of banks */
 export const BANKS: Bank[] = [
   { name: 'Demographic and account details', id: 'A' },
-  { name: 'Balance ', id: 'B' },
-  { name: 'Transaction', id: 'C' },
+  { name: 'Balance Information ', id: 'B' },
+  { name: 'Transaction Information', id: 'C' },
   /* { name: 'Bank D (France)', id: 'D' },
   { name: 'Bank E (France)', id: 'E' },
   { name: 'Bank F (Italy)', id: 'F' },
