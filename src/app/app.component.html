@@ -1,0 +1,38 @@
+<mat-toolbar color="primary"> Angular Material 2 App </mat-toolbar>
+<div class="basic-container">
+  <!-- <h1>ngx-mat-select-search</h1>
+  <p>Angular component providing an input field for searching / filtering
+    <a href="https://material.angular.io/components/select/overview" target="_blank">MatSelect</a>
+    options of the <a href="https://material.angular.io">Angular Material</a> library.</p>
+
+  <p><a href="https://github.com/bithost-gmbh/ngx-mat-select-search" target="_blank">https://github.com/bithost-gmbh/ngx-mat-select-search</a></p> -->
+
+  <h2>Poc ListBuilder</h2>
+  <h3>Dropdown by category and subcategory in sequence</h3>
+
+  <!-- <app-single-selection-example></app-single-selection-example> -->
+
+  <!--  <app-multiple-selection-example></app-multiple-selection-example> -->
+
+  <!-- <app-option-groups-example></app-option-groups-example> -->
+
+  <!-- <app-custom-clear-icon-example></app-custom-clear-icon-example> -->
+
+  <!-- <app-server-side-search-example></app-server-side-search-example> -->
+
+  <div>
+    <div class="ng-mat-ddl">
+      <app-single-selection-example
+        (categorySelectEvent)="categorySelectEventEmit($event)"
+      ></app-single-selection-example>
+    </div>
+    <div class="ng-mat-ddl" *ngIf="selectedCategory">
+      <app-option-groups-example></app-option-groups-example>
+    </div>
+  </div>
+
+  <!-- <span class="version-info">
+    ngx-mat-select-search Version: {{matSelectSearchVersion}} <br/>
+    Material Version: {{version.full}}
+  </span> -->
+</div>
